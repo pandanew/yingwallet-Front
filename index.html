@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body, html {
+            height: 100%;
+        }
+        .main > div {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+        }
+        .main img {
+            position: absolute;
+            left: 0;
+            top: 0;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .links {
+            position: absolute;
+            left: calc( 50% + 88px );
+            top: 67px;
+            line-height: 25px;
+        }
+        .links a {
+            display: block;
+            text-decoration: none;
+            color: #A3A3A5;
+            font-size: 12px;
+        }
+        .links a:hover {
+            color: #5074FF;
+        }
+        .mouse {
+            position: absolute;
+            width: 28px;
+            height: 41px;
+            left: 50%;
+            bottom: 44px;
+            transform: translateX(-50%);
+            background: url(img/mouse.png);
+        }
+        .social-icon {
+            position: absolute;
+            width: 150px;
+            height: 30px;
+            left: calc( 50% - 500px );
+            top: 120px;
+        }
+        .social-icon a {
+            position: relative;
+            display: inline-block;
+            width: 30px;
+            height: 100%;
+        }
+        .social-icon a:focus img{
+            display: block;
+        }
+        .social-icon a img {
+            position: absolute;
+            top: -40px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div class="main">
+        <div style="height: 53px;">
+            <img src="img/0.png" alt="">
+        </div>
+        <div style="height: 800px;">
+            <img src="img/1.png" alt="">
+            <div class="mouse"></div>
+        </div>
+        <div style="height: 685px;">
+            <img src="img/2.png" alt="">
+        </div>
+        <div style="height: 685px;">
+            <img src="img/3.png" alt="">
+        </div>
+        <div style="height: 685px;">
+            <img src="img/4.png" alt="">
+        </div>
+        <div style="height: 520px;">
+            <img src="img/5.png" alt="">
+        </div>
+        <div style="height: 220px;">
+            <img src="img/6.png" alt="">
+        </div>
+        <div style="height: 220px;">
+            <img src="img/7.png" alt="">
+            <div class="links">
+                <a href="">Mytoken</a>
+                <a href="">Imtoken</a>
+                <a href="">MX bank</a>
+            </div>
+            <div class="social-icon">
+                <a href="javascrip:;">
+                    <img src="img/icon.png" />
+                </a>
+                <a href="javascrip:;">
+                    <img src="img/icon.png" />
+                </a>
+                <a href="javascrip:;">
+                    <img src="img/icon.png" />
+                </a>
+                <a href="javascrip:;">
+                    <img src="img/icon.png" />
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
